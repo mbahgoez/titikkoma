@@ -65,7 +65,7 @@ $(document).ready(function(){
 				after:"<i>function {</i>"
 			},
 			{
-				before:/<?php/i,
+				before:"<?php",
 				after:"Dilarang Memasang PHP"
 			},
 			{

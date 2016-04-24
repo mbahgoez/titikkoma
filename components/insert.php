@@ -15,7 +15,7 @@ if(isset($_POST['tambah'])){
 	
 
 		if(mysqli_query($con, $sql)){
-			header("Location:../admin/");
+			header("Location:/admin");
 		}
 		else {
 			echo "error";
