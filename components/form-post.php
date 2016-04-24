@@ -3,7 +3,7 @@
 <div class="make-post">
 	<div class="card">
 		<h6>Buat Post</h6>
-		<form autocomplete="off" method="POST" action="http://alldeb.dev/components/insert.php">
+		<form autocomplete="off" method="POST" action="../components/insert.php">
 			<input type="text" placeholder="Name" name="title">
 			
 			<select name="distro" id="distro">

@@ -1,0 +1,13 @@
+live:
+    scheme: ftp
+    host: ftp.titikkoma.xyz
+    port: 21
+    user: u891608420
+    pass: jancok4848
+    check: true
+    path:
+        local: /
+        remote: /public_html
+
+
+        
