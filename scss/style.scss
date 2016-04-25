@@ -13,7 +13,8 @@
 
 body {
 	background:#fafafa;
-}
+} 
+// body
 
 header {
 	background:#f6f6f6;
@@ -40,7 +41,8 @@ header {
 			text-align:center;
 		}
 	}
-}
+} // header
+
 
 form#search-form {
 	padding:25px 15px;
@@ -74,7 +76,9 @@ form#search-form {
 			outline:none;
 		}
 	}
-}
+} // form
+
+
 
 section {
 	opacity:0;
@@ -97,39 +101,35 @@ section {
 		// padding:30px;
 		display:block;
 		// pointer:
+
+		&:nth-of-type(odd) {
+			.desc-app.bg-color {
+				background:#FF0070;
+				h2 {
+					color:#fff;
+				}
+				p {
+					color:#fff;
+				}
+			}
+		}
+		&:nth-of-type(even){
+			.desc-app.bg-color {
+				background:#88DA2B;
+				color:#fff;
+				h2 {
+					color:#fff;
+				}
+				p {
+					color:#fff;
+				}
+			}
+		}
 		
 		&:hover {
 			&:before {
 				opacity:1;
 			}
-		}
-
-		&:before {
-			// transition:all .5s ease;
-			// opacity:1;
-			// content:"\f489";
-			// float:right;
-			// color:#777;
-			// font-weight:600;
-			// display:inline-block;
-			// // box-shadow:0 1px 1px 0 #ccc;
-			// padding:30px;
-			// font-size:30px;
-			// font-family:"ionicons", 'raleway';
-
-			// @include featured {
-			// 	padding:15px;
-			// 	margin:0;
-			// }
-		}
-
-		&.opened {
-			// &:before {
-			// 	// content:"\f12a";
-			// 	transform:rotate(360-225deg);
-			// 	// color:$red;
-			// 	color:#fff;
-			// }
 		}
 
 		@include featured {
@@ -153,7 +153,7 @@ section {
 			}
 		}
 	}
-}
+} // section
 
 
 .terminal {
@@ -180,7 +180,7 @@ section {
 			content:"$ ";
 		}
 	}
-}
+} // terminal
 
 
 .dropdown {
@@ -206,7 +206,7 @@ section {
 
 
 	}
-}
+} // dropdown
 
 .desc-app {
 	background:#fefefe;
@@ -217,17 +217,8 @@ section {
 		// background: #eee;
 		box-shadow:0 2px 15px 0 #ccc;
 	}
-	&.bg-color:nth-of-type(odd) {
-		background:darken($blue, 20%);
-		box-shadow:0 5px 10px 0 #ccc;
-		h2 {
-			color:#fff;
-		}
-		p {
-			color:#fff;
-		}
-	}
 }
+// desc app
 
 .install {
 	display:none;
@@ -252,7 +243,7 @@ section {
 			text-align:center;
 		}
 	}
-}
+} // install
 
 .make-post {
 	padding:28px;
@@ -297,7 +288,7 @@ section {
 				width:100%;
 				display: block;
 			}
-		}
+		} // select
 
 		div.group-form {
 			margin:15px 0;
@@ -328,9 +319,9 @@ section {
 					// border-radius: 100%;
 					// border:2px solid #ccc;
 				}
-				
-			}
-		}
+			 } // label
+		 } // group form
+
 		textarea {
 			font-family: 'sans-serif';
 			font-size:12px;
@@ -349,30 +340,10 @@ section {
 			}
 			div.code {
 				padding:10px;
-				// code {
-				// 	border-radius:4px;
-				// 	background:#f8f8f8;
-				// 	padding:10px;
-				// 	margin:4px 0;
-				// 	border:1px solid #eee;
-				// 	overflow:visible;
-				//  	word-wrap: break-word;
-				// 	text-overflow:ellipsis;
-				// 	display:block;
-				// 	font-family:monospace;
-				// 	font-weight:bolder;
-				// 	color:#333;
-				// 	line-height:150%;
-				// 	&:before {
-				// 		color:$red;
-				// 		content:"$ ";
-				// 	}
-				// }
-
 			}
-		}
-	}
-
+		} // preview
+	} 
+	// card
 
 	button {
 		font-weight: 700;
@@ -384,8 +355,9 @@ section {
 		box-shadow: 0 1px 5px 0 #ccc;
 		color:#fff;
 		@include raleway;
-	}
-}
+	} 
+} // make post
+
 
 @-webkit-keyframes fade {
 	from{opacity:0;};
@@ -407,20 +379,20 @@ blockquote {
 	padding:10px;
 	background:#f8f8f8;
 	border:1px solid #ccc;
-}
-blockquote::first-letter {
-	text-transform: uppercase;
-}
-blockquote::before {
-	font-family: 'ionicons';
-	content:"\f347";
-	font-size:7px;
-	color:#888;
-	padding-right: 5px;
-	top:-5px;
-	position:relative;
-}
-blockquote::after {
+
+	&::first-letter {
+		text-transform: uppercase;
+	}
+	&::before {
+		font-family: 'ionicons';
+		content:"\f347";
+		font-size:7px;
+		color:#888;
+		padding-right: 5px;
+		top:-5px;
+		position:relative;
+	}
+	&::after {
 	font-family: 'ionicons';
 	content:"\f347";
 	font-size:7px;
@@ -428,7 +400,12 @@ blockquote::after {
 	padding-left: 5px;
 	top:-5px;
 	position:relative;
-}
+	}
+} 
+// blockquote
+
+
+
 
 .ads {
 	width:100%;
@@ -449,6 +426,7 @@ blockquote::after {
 		}
 	}
 }
+// ads
 
 
 
@@ -470,7 +448,7 @@ blockquote::after {
 		display: block;
 		color:#ccc;
 	}
-}
+} // not found
 
 
 
@@ -606,3 +584,4 @@ blockquote::after {
 		}
 	}
 }
+// action

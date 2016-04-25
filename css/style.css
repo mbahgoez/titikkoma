@@ -372,6 +372,19 @@ section {
     margin: 30px 0;
     box-shadow: 0 1px 4px 0 #ccc;
     display: block; }
+    section .content:nth-of-type(odd) .desc-app.bg-color {
+      background: #FF0070; }
+      section .content:nth-of-type(odd) .desc-app.bg-color h2 {
+        color: #fff; }
+      section .content:nth-of-type(odd) .desc-app.bg-color p {
+        color: #fff; }
+    section .content:nth-of-type(even) .desc-app.bg-color {
+      background: #88DA2B;
+      color: #fff; }
+      section .content:nth-of-type(even) .desc-app.bg-color h2 {
+        color: #fff; }
+      section .content:nth-of-type(even) .desc-app.bg-color p {
+        color: #fff; }
     section .content:hover:before {
       opacity: 1; }
     @media (max-width: 360px) {
@@ -431,13 +444,6 @@ section {
   transition: all .3s ease; }
   .desc-app:hover {
     box-shadow: 0 2px 15px 0 #ccc; }
-  .desc-app.bg-color:nth-of-type(odd) {
-    background: #0954b3;
-    box-shadow: 0 5px 10px 0 #ccc; }
-    .desc-app.bg-color:nth-of-type(odd) h2 {
-      color: #fff; }
-    .desc-app.bg-color:nth-of-type(odd) p {
-      color: #fff; }
 
 .install {
   display: none;
@@ -563,27 +569,24 @@ blockquote {
   padding: 10px;
   background: #f8f8f8;
   border: 1px solid #ccc; }
-
-blockquote::first-letter {
-  text-transform: uppercase; }
-
-blockquote::before {
-  font-family: 'ionicons';
-  content: "\f347";
-  font-size: 7px;
-  color: #888;
-  padding-right: 5px;
-  top: -5px;
-  position: relative; }
-
-blockquote::after {
-  font-family: 'ionicons';
-  content: "\f347";
-  font-size: 7px;
-  color: #888;
-  padding-left: 5px;
-  top: -5px;
-  position: relative; }
+  blockquote::first-letter {
+    text-transform: uppercase; }
+  blockquote::before {
+    font-family: 'ionicons';
+    content: "\f347";
+    font-size: 7px;
+    color: #888;
+    padding-right: 5px;
+    top: -5px;
+    position: relative; }
+  blockquote::after {
+    font-family: 'ionicons';
+    content: "\f347";
+    font-size: 7px;
+    color: #888;
+    padding-left: 5px;
+    top: -5px;
+    position: relative; }
 
 .ads {
   width: 100%;

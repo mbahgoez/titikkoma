@@ -4,15 +4,15 @@ $keyword = $_GET['find'];
 <header>
 		<div class="container">
 			<div class="row">
-				<div class="col lg-2 lg-push-1">
+				<div class="col lg-3 lg-push-1">
 					<div class="brand">
 						<h1 id="title">
 							<a href="/">
-								GetApete
+								TitikKoma
 							</a>
 						</h1>
 						<p id="desc-title">
-							For Linux User
+							Sebuah Program diakhiri dengan TitikKoma
 						</p>
 					</div>
 				</div>

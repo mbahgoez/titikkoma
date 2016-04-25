@@ -10,7 +10,6 @@ var idContent = document.getElementById('content');
 		}, 1500);
 	});
 
-
 var contentElem = $(".desc-app");
 	
 contentElem.on('click', function(){
@@ -26,7 +25,7 @@ contentElem.on('click', function(){
 
 $(document).ready(function(){
 
-
+	$("textarea").attr('spellcheck', false);
 
 
 	var preview = $("#preview .code");
@@ -39,9 +38,15 @@ $(document).ready(function(){
 	});
 
 
+		window.addEventListener('load', function(){
+			val = $("#edit-textarea").val();
+
+			preview.html(val);
+		})
+	
+
 
 	var textarea = document.querySelector(".make-post textarea");
-
 
 	var autoText =  [
 			{
@@ -119,6 +124,9 @@ $(document).ready(function(){
 		];
 
 
+if(textarea !== null){
+
+
 	textarea.addEventListener('keyup', function(){
 		var val = textarea.value;
 
@@ -129,6 +137,9 @@ $(document).ready(function(){
 
 		preview.html(val);
 	});
+
+}
+
 
 
 	// $("#search").on('keyup', function(){

@@ -8,9 +8,10 @@ if(isset($_POST['tambah'])){
 	$distro = $_POST['distro'];
 	$arsitektur = $_POST['arsitektur'];
 	$description = $_POST['desc'];
+	$category = $_POST['category'];
 
 	// $sql = "INSERT INTO tbl_app(title_app, distro_app, architecture, description) VALUES('$title', '$distro', '$arsitektur', '$description')";
-	$sql = "INSERT INTO tbl_app(title_app, distro_app, architecture, description) VALUES('$title', '$distro', '$arsitektur', '$description')";
+	$sql = "INSERT INTO tbl_app(title_app, distro_app, architecture, description, category) VALUES('$title', '$distro', '$arsitektur', '$description', '$category')";
 	
 	
 

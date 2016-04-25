@@ -8,7 +8,7 @@ include "components/connection.php";
 <head>
 	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8">
-	<title>GetApete</title>
+	<title>TitikKoma.xyz | Sebuah Program diakhiri dengan TitikKoma</title>
 	<link rel="stylesheet" href="css/ionicons.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,6 +35,9 @@ include "components/connection.php";
 						$q = $_GET['find'];
 
 						include "components/search-results.php";
+					}
+					else if(isset($_GET['category'])){
+						include "components/category.php";
 					}
 					else {
 						include "components/content-list.php";
