@@ -32,3 +32,13 @@ function setSelected($var, $var2){
 		echo "selected";
 	}
 }
+
+
+function check_input($data){
+	$data = trim($data);
+	$data = stripslashes($data);
+	$data = strip_tags($data);
+	$data = filter_var($data);
+	$data = htmlspecialchars($data);
+	return $data;
+}

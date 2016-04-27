@@ -28,7 +28,7 @@ function setActiveClass($cat, $str){
 
 		<ul class="admin">
 			<li><a href="/admin">You Logged as <?php echo $_SESSION['user']; ?></a></li>
-			<li><a class="keluar" href="/admin/keluar.php">Keluar</a></li>
+			<li><a class="keluar" href="/admin/keluar">Keluar</a></li>
 		</ul>
 	
 		<?php
@@ -37,22 +37,22 @@ function setActiveClass($cat, $str){
 
 		<ul class="list">
 			<li>
-				<a href="?category=all" <?php setActiveClass($category, "all") ?>>All Application</a>
+				<a href="/?category=all" <?php setActiveClass($category, "all") ?>>All Application</a>
 			</li>
 			<li>
-				<a href="?category=programming" <?php setActiveClass($category, "programming") ?> >Programming</a>
+				<a href="/?category=programming" <?php setActiveClass($category, "programming") ?> >Programming</a>
 			</li>
 			<li>
-				<a href="?category=office" <?php setActiveClass($category, "office") ?>>Office</a>
+				<a href="/?category=office" <?php setActiveClass($category, "office") ?>>Office</a>
 			</li>
 			<li>
-				<a href="?category=multimedia" <?php setActiveClass($category, "multimedia") ?>>Multimedia</a>
+				<a href="/?category=multimedia" <?php setActiveClass($category, "multimedia") ?>>Multimedia</a>
 			</li>
 			<li>
-				<a href="?category=internet" <?php setActiveClass($category, "internet") ?>>Internet</a>
+				<a href="/?category=internet" <?php setActiveClass($category, "internet") ?>>Internet</a>
 			</li>
 			<li>
-				<a href="?category=utility" <?php setActiveClass($category, "utility") ?>>Utility</a>
+				<a href="/?category=utility" <?php setActiveClass($category, "utility") ?>>Utility</a>
 			</li>
 		</ul>
 	</div>

@@ -1,13 +1,14 @@
 <?php 
 
 include "../../components/connection.php";
+include "../../components/functions.php";
 
 $id = $_GET['update'];
 
-$title = $_POST['title'];
-$distro = $_POST['distro'];
-$categories = $_POST['category'];
-$arsitektur = $_POST['arsitektur'];
+$title = check_input($_POST['title']);
+$distro = check_input($_POST['distro']);
+$categories = check_input($_POST['category']);
+$arsitektur = check_input($_POST['arsitektur']);
 $desc = $_POST['desc'];
 
 

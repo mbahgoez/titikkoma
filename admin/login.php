@@ -2,7 +2,7 @@
 session_start();
 
 if(isset($_SESSION['id']) && isset($_SESSION['user'])){
-	header("Location:index.php");
+	header("Location:/admin/");
 }
 
  ?>
@@ -16,7 +16,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['user'])){
 </head>
 <body>
 	
-	<form action="otentikasi.php" autocomplete="off">	
+	<form action="otentikasi.php" method="post" autocomplete="off">	
 		<div class="container">
 			<div class="card">
 				<div class="header">

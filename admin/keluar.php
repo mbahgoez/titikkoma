@@ -7,5 +7,5 @@ session_destroy();
 
 
 if(isset($_SESSION['id']) && isset($_SESSION['user'])){
-	header("Location:login.php");
+	header("Location:/admin/login");
 }

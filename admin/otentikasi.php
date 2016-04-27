@@ -1,17 +1,19 @@
 <?php 
 
 session_start();
+include "../components/connection.php";
+include "../components/functions.php";
 
 if(isset($_SESSION['id'])){
-	header("Location:index.php");
+	header("Location:/admin/");
 }
 
-include "../components/connection.php";
 
-if(isset($_GET['username']) && isset($_GET['password'])){
+if(isset($_POST['username']) && isset($_POST['password'])){
 
-	$username = $_GET['username'];
-	$password = $_GET['password'];
+
+	$username = check_input($_POST['username']);
+	$password = check_input($_POST['password']);
 
 	$sql = "SELECT * FROM user WHERE user='$username' AND pass='$password'";
 
@@ -20,10 +22,6 @@ if(isset($_GET['username']) && isset($_GET['password'])){
 	$num = mysqli_num_rows($query);
 
 	if($num == 1){
-		// $sql = "SELECT id FROM user WHERE user='$username'";
-		// $query = mysqli_query($con, $sql);
-
-		// echo 
 
 		$data = mysqli_fetch_array($query);
 		
@@ -31,16 +29,16 @@ if(isset($_GET['username']) && isset($_GET['password'])){
 		$_SESSION['user'] = $data[1];
 
 		if(isset($_SESSION['id'])){
-			header("Location:index.php");
+			header("Location:/admin");
 		}
 	}
 	else {
-		header("Location:login.php");
+		header("Location:/admin/login");
 	}
 
 }
 else {
-	header("Location:login.php");
+	header("Location:/admin/login");
 }
 
  ?>

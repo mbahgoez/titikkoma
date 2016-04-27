@@ -1,4 +1,11 @@
 <?php
+
+session_start();
+
+if(!isset($_SESSION['id']) && !isset($_SESSION['user'])){
+	header("Location:login.php");
+}
+
 include "../components/connection.php";
 include "../components/functions.php";
 
@@ -106,7 +113,7 @@ $categories = $data['category'];
 								</label>
 							</div>
 
-							<textarea name="desc" id="edit-textarea" cols="50" rows="30"><?php echo $data['description']; ?></textarea>
+							<textarea name="desc" id="edit-textarea" cols="50" rows="20"><?php echo $data['description']; ?></textarea>
 
 
 
@@ -120,7 +127,7 @@ $categories = $data['category'];
 							</div>
 							
 							<button type="submit" name="tambah" value="submit" id="tambah">PUBLISH AND UPDATE</button>
-							<button type="reset" name="reset" value="reset">RESET</button>
+							<button type="reset" name="reset" value="reset" id="reset">RESET</button>
 						</form>
 					</div>
 				</div>
@@ -130,8 +137,24 @@ $categories = $data['category'];
 	</section>
 	
 
+
+
+
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/nprogress.js"></script>
+	<script src="tinymce/tinymce.min.js"></script>
 	<script src="../js/script.js"></script>
+	
+	<script>
+		
+		tinymce.init({
+			menubar:false,
+			selector:'textarea#edit-textarea',
+			toolbar:'undo redo | bold italic | link code',
+			plugins:'code preview',
+			theme:'modern'
+		});
+	</script>
+
 </body>
 </html>

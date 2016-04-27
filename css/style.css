@@ -526,16 +526,17 @@ section {
       font-family: 'sans-serif';
       font-size: 12px; }
     .make-post .card div#preview {
+      margin: 20px 0;
       border: 1px solid #ccc;
       padding: 10px;
-      border-radius: 4px; }
+      border-radius: 1px; }
       .make-post .card div#preview div.header span {
         color: #999;
         font-family: 'sans-serif';
         font-weight: 800; }
       .make-post .card div#preview div.code {
         padding: 10px; }
-  .make-post button {
+  .make-post button#tambah, .make-post button#reset {
     font-weight: 700;
     margin: 5px 0;
     background: #2E85F4;
