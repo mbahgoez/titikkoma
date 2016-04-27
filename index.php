@@ -11,6 +11,7 @@ include "components/connection.php";
 	<title>TitikKoma.xyz | Sebuah Program diakhiri dengan TitikKoma</title>
 	<link rel="stylesheet" href="css/ionicons.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<?php include "components/analytics.php"; ?>
 </head>
 <body>
 	
