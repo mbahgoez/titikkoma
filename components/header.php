@@ -7,6 +7,23 @@ else {
 }
 
  ?>
+
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"url": "https://titikkoma.xyz/",
+	"potentialAction": {
+    	"@type": "SearchAction",
+    	"target": [
+      	"https://titikkoma.xyz?find={search_term_string}",
+    	],
+    	"query-input": "required name=search_term_string"
+  	}
+}
+</script>
+
+
 <header>
 		<div class="container">
 			<div class="row">
