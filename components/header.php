@@ -16,7 +16,7 @@ else {
 	"potentialAction": {
     	"@type": "SearchAction",
     	"target": [
-      	"https://titikkoma.xyz?find={search_term_string}",
+      	"https://titikkoma.xyz?find={search_term_string}"
     	],
     	"query-input": "required name=search_term_string"
   	}
