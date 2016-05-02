@@ -16,6 +16,9 @@ function setCategory($category){
 	else if($category == "utillity"){
 		$cat = "Utillity";
 	}
+	else {
+		$cat = "";
+	}
 	return $cat;
 }
 

@@ -5,7 +5,6 @@ include "functions.php";
 if(isset($_GET['category'])){
 	$category = $_GET['category'];
 
-
 	if($category == "all"){
 		$sql = "SELECT * FROM tbl_app ORDER BY id_app DESC";
 	}
@@ -18,7 +17,6 @@ if(isset($_GET['category'])){
 
 	if(mysqli_num_rows($query) >= 1){
 
-	
 
 	while($app = mysqli_fetch_array($query)){ ?>
 
@@ -74,7 +72,7 @@ if(isset($_GET['category'])){
 				<a href="/admin/edit.php?<?php echo 'edit='.$app['id_app']; ?>" class="edit">Edit</a>
 				<a href="/admin/delete.php?<?php echo 'delete='.$app['id_app']; ?>" class="delete">Delete</a>
 			</div>
-			<?php } ?>
+		<?php } ?>
 
 		</div>
 	</div>
@@ -83,6 +81,12 @@ if(isset($_GET['category'])){
 
 		}
 		else {
+			if(isset($_GET['find'])){
+				$search = $_GET['find'];
+			}
+			else {
+				$search = "";
+			}
 			?>
 
 			<div id="not-found">

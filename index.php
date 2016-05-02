@@ -1,17 +1,34 @@
 <?php 
 include "components/connection.php";
+
+function getHost($link){
+	echo 'http://'.$_SERVER['SERVER_NAME'].$link;
+}
  ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8">
+	<?php 
+	include "components/meta-seo.php";
+	?>
 	<title>TitikKoma.xyz | Sebuah Program diakhiri dengan TitikKoma</title>
-	<link rel="stylesheet" href="css/ionicons.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php getHost('/css/ionicons.min.css'); ?>">
+	<link rel="stylesheet" href="<?php getHost('/css/style.css'); ?>">
 	<?php include "components/analytics.php"; ?>
+
+
+	<style>
+	div.category {
+		position:fixed; 
+		width:20%; 
+		top:205px;
+	}
+	</style>
 </head>
 <body>
 	
@@ -54,15 +71,22 @@ include "components/connection.php";
 	</section>
 
 
-	<link rel="stylesheet" href="css/nprogress.css">
-	<script src="js/jquery.min.js"></script>
-	<script src="js/nprogress.js"></script>
+	<link rel="stylesheet" href="<?php getHost('/css/nprogress.css');?>">
+	<script src="<?php getHost('/js/jquery.min.js'); ?>"></script>
+	<script src="<?php getHost('/js/nprogress.js'); ?>"></script>
 
 	<script>
 			NProgress.configure({showSpinner: true});
 			NProgress.start();
 	</script>
+	<script>
 
-	<script src="js/script.js"></script>
+
+	
+		
+
+	</script>
+
+	<script src="<?php getHost('/js/script.js')?>"></script>
 </body>
 </html>

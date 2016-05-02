@@ -7,8 +7,6 @@ $query = mysqli_query($con, $sql);
 
 if(mysqli_num_rows($query) >= 1){
 
-
-
 while($app = mysqli_fetch_array($query)){ ?>
 
 <div class="content">

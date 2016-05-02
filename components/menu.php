@@ -1,5 +1,4 @@
 <?php 
-session_start();
 
 if(isset($_GET['category'])){
 	$category = $_GET["category"];
@@ -14,12 +13,19 @@ function setActiveClass($cat, $str){
 		echo "class='active'";
 	}
 }
+
+
+function getUrlHost($link){
+	echo 'http://'.$_SERVER['SERVER_NAME'].$link;
+}
  ?>
+
+
+
 
 <div id="menu">
 
-	<div class="category">
-		
+	<div id="category" class="category">
 		<?php 
 		if(isset($_SESSION['id']) && isset($_SESSION['user'])){
 
@@ -37,23 +43,25 @@ function setActiveClass($cat, $str){
 
 		<ul class="list">
 			<li>
-				<a href="/?category=all" <?php setActiveClass($category, "all") ?>>All Application</a>
+				<a href="<?php getUrlHost("/category/all") ?>" <?php setActiveClass($category, "all") ?>>All Application</a>
 			</li>
 			<li>
-				<a href="/?category=programming" <?php setActiveClass($category, "programming") ?> >Programming</a>
+				<a href="<?php getUrlHost('/category/programming') ?>" <?php setActiveClass($category, "programming") ?> >Programming</a>
 			</li>
 			<li>
-				<a href="/?category=office" <?php setActiveClass($category, "office") ?>>Office</a>
+				<a href="<?php getUrlHost('/category/office'); ?>" <?php setActiveClass($category, "office") ?>>Office</a>
 			</li>
 			<li>
-				<a href="/?category=multimedia" <?php setActiveClass($category, "multimedia") ?>>Multimedia</a>
+				<a href="<?php getUrlHost('/category/multimedia'); ?>" <?php setActiveClass($category, "multimedia") ?>>Multimedia</a>
 			</li>
 			<li>
-				<a href="/?category=internet" <?php setActiveClass($category, "internet") ?>>Internet</a>
+				<a href="<?php getUrlHost('/category/internet'); ?>" <?php setActiveClass($category, "internet") ?>>Internet</a>
 			</li>
 			<li>
-				<a href="/?category=utility" <?php setActiveClass($category, "utility") ?>>Utility</a>
+				<a href="<?php getUrlHost('/category/utility'); ?>" <?php setActiveClass($category, "utility") ?>>Utility</a>
 			</li>
 		</ul>
 	</div>
 </div>
+
+

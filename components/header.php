@@ -1,5 +1,11 @@
 <?php 
-$keyword = $_GET['find'];
+if(isset($_GET['find'])){
+	$keyword = $_GET['find'];	
+}
+else {
+	$keyword = "";
+}
+
  ?>
 <header>
 		<div class="container">
@@ -17,7 +23,7 @@ $keyword = $_GET['find'];
 					</div>
 				</div>
 				<div class="col lg-3 lg-push-6">
-					<form action="" id="search-form">
+					<form action="/" id="search-form">
 					<input type="text" id="search" placeholder="Some Keyword..." name="find" value="<?php echo $keyword; ?>">
 						<button>
 							<i class="icon ion-ios-search"></i>

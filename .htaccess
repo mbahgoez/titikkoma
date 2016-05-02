@@ -3,3 +3,6 @@ ErrorDocument 404 /404.php
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
+RewriteRule ^category/([0-9a-zA-Z]+) category.php?category=$1 [NC,L]
+RewriteRule ^application/([0-9a-zA-Z]+) application.php?id=$1 [NC,L]
+REwriteRule ^application/ index.php [L]
