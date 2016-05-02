@@ -3,7 +3,7 @@
 	if($file == "/index.php"){
 		// config seo
 
-		$description = "A Simple Site to show you easy way install app in Linux";
+		$description = "It's easy to install linux applications present on your computer. All the way to install applications using the existing terminal here.";
 		$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 		$title 		 = "TitikKoma: Sebuah Program diakhiri dengan TitikKoma";
 		$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
@@ -11,37 +11,37 @@
 
 	else if($file == "/category.php") {
 		if($_GET['category'] == 'all'){
-			$description = "Category berbagai aplikasi tersedia disini mulai dari pemrograman, office,multimedia dan grapich";
+			$description = "Aplikasi yang telah tersedia di linux dan cara instalasinya telah disederhanakan";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: All Application";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
 		}
 		else if($_GET['category'] == 'programming'){
-			$description = "TitikKoma: Programming";
+			$description = "Now, most of the programming of applications are already available on Linux and how the installation has been simplified";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: Programming";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository, programming, texteditor, debug, compiler, node";
 		}
 		else if($_GET['category'] == 'office'){
-			$description = "TitikKoma: Office";
+			$description = "want to do office work such as creating a document with a word processing application, presentation and process data with spreadsheet applications. everything is there and it's free";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: Office";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository, microsoft office, open office, wps, microsoft word, libre office, word processing, excel, doc, docx, ppt";
 		}
 		else if($_GET['category'] == 'multimedia'){
-			$description = "TititkKoma: Multimedia";
+			$description = "watch movies, listen to music and edit video for you to use commercial purposes such as youtube monetize without adding costs.";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: Multimedia";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository, music player, mp3 player, player, vlc, music, codec, flash";
 		}
 		else if($_GET['category'] == 'internet'){
-			$description = "TitikKoma: Internet";
+			$description = "surf the Internet, read the news portal and download the video and do not forget to interact with friends using social media, using an application that helps you connect to the internet";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: All Application with Category Internet";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
 		}
 		else if($_GET['category'] == 'utility'){
-			$description = "TitikKoma: Utility";
+			$description = "Apps that help you in the future, yet you need. but at least you install to solve the problem";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: Utillity";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
