@@ -6,3 +6,10 @@ RewriteRule ^(.*)$ $1.php
 RewriteRule ^category/([0-9a-zA-Z]+) category.php?category=$1 [NC,L]
 RewriteRule ^application/([0-9a-zA-Z]+) application.php?id=$1 [NC,L]
 REwriteRule ^application/ index.php [L]
+
+
+RewriteCond %{HTTP_HOST} ^31\.220\.16\.31
+RewriteRule (.*) http://www.titikkoma.xyz/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.titikkoma\.xyz$
+RewriteRule ^/?$ "http\:\/\/titikkoma\.xyz\/" [R=301,L]
