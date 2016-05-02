@@ -1,19 +1,19 @@
 <?php 
-error_reporting(E_ALL);
 include "components/connection.php";
  ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope itemtype="http://schema.org/WebSite">
 	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8">
 	<?php include "components/meta-seo.php"; ?>
-	<title><?php echo $title; ?></title>
+	<title itemprop="name"><?php echo $title; ?></title>
 	<link rel="stylesheet" href="../css/ionicons.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 	<?php include "components/analytics.php"; ?>
+	<link rel="canonical" href="http://titikkoma.xyz/" itemprop="url">
 </head>
 <body>
 	

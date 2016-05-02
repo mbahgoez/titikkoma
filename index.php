@@ -9,18 +9,18 @@ function getHost($link){
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head itemscope itemtype="http://schema.org/WebSite">
 
 	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8">
 	<?php 
 	include "components/meta-seo.php";
 	?>
-	<title>TitikKoma.xyz | Sebuah Program diakhiri dengan TitikKoma</title>
+	<title itemprop="name">TitikKoma</title>
 	<link rel="stylesheet" href="<?php getHost('/css/ionicons.min.css'); ?>">
 	<link rel="stylesheet" href="<?php getHost('/css/style.css'); ?>">
 	<?php include "components/analytics.php"; ?>
-
+	<link rel="canonical" href="http://titikkoma.xyz/" itemprop="url">
 
 	<style>
 	div.category {
