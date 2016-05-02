@@ -43,22 +43,22 @@ function getUrlHost($link){
 
 		<ul class="list">
 			<li>
-				<a href="<?php getUrlHost("/category/all") ?>" <?php setActiveClass($category, "all") ?>>All Application</a>
+				<a target="_blank" href="<?php getUrlHost("/category/all") ?>" <?php setActiveClass($category, "all") ?>>All Application</a>
 			</li>
 			<li>
-				<a href="<?php getUrlHost('/category/programming') ?>" <?php setActiveClass($category, "programming") ?> >Programming</a>
+				<a target="_blank" href="<?php getUrlHost('/category/programming') ?>" <?php setActiveClass($category, "programming") ?> >Programming</a>
 			</li>
 			<li>
-				<a href="<?php getUrlHost('/category/office'); ?>" <?php setActiveClass($category, "office") ?>>Office</a>
+				<a target="_blank" href="<?php getUrlHost('/category/office'); ?>" <?php setActiveClass($category, "office") ?>>Office</a>
 			</li>
 			<li>
-				<a href="<?php getUrlHost('/category/multimedia'); ?>" <?php setActiveClass($category, "multimedia") ?>>Multimedia</a>
+				<a target="_blank" href="<?php getUrlHost('/category/multimedia'); ?>" <?php setActiveClass($category, "multimedia") ?>>Multimedia</a>
 			</li>
 			<li>
-				<a href="<?php getUrlHost('/category/internet'); ?>" <?php setActiveClass($category, "internet") ?>>Internet</a>
+				<a target="_blank" href="<?php getUrlHost('/category/internet'); ?>" <?php setActiveClass($category, "internet") ?>>Internet</a>
 			</li>
 			<li>
-				<a href="<?php getUrlHost('/category/utility'); ?>" <?php setActiveClass($category, "utility") ?>>Utility</a>
+				<a target="_blank" href="<?php getUrlHost('/category/utility'); ?>" <?php setActiveClass($category, "utility") ?>>Utility</a>
 			</li>
 		</ul>
 	</div>

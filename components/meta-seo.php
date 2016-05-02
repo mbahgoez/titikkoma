@@ -17,33 +17,33 @@
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
 		}
 		else if($_GET['category'] == 'programming'){
-			$description = "Programming";
+			$description = "TitikKoma: Programming";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-			$title 		 = "TitikKoma: All Application with Category Programming";
-			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
+			$title 		 = "TitikKoma: Programming";
+			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository, programming, texteditor, debug, compiler, node";
 		}
 		else if($_GET['category'] == 'office'){
-			$description = "Office";
+			$description = "TitikKoma: Office";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-			$title 		 = "TitikKoma: All Application with Category Office";
-			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
+			$title 		 = "TitikKoma: Office";
+			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository, microsoft office, open office, wps, microsoft word, libre office, word processing, excel, doc, docx, ppt";
 		}
 		else if($_GET['category'] == 'multimedia'){
-			$description = "Multimedia";
+			$description = "TititkKoma: Multimedia";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-			$title 		 = "TitikKoma: All Application with Category Office Multimedia";
-			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
+			$title 		 = "TitikKoma: Multimedia";
+			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository, music player, mp3 player, player, vlc, music, codec, flash";
 		}
 		else if($_GET['category'] == 'internet'){
-			$description = "Internet";
+			$description = "TitikKoma: Internet";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
 			$title 		 = "TitikKoma: All Application with Category Internet";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
 		}
 		else if($_GET['category'] == 'utility'){
-			$description = "Utility";
+			$description = "TitikKoma: Utility";
 			$url 		 = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-			$title 		 = "TitikKoma: All Application with Category Utillity";
+			$title 		 = "TitikKoma: Utillity";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
 		}
 	}
