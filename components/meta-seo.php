@@ -56,16 +56,19 @@
 		$keywords = "";
 	}
 ?>
+		
+		<meta property="fb:app_id" content="1129385450445313">
+
 		<meta name="description" content="<?php echo $description; ?>">
 		<meta name="keywords" content="<?php echo $keywords; ?>">
 
-		<meta name="og:description" content="<?php echo $description; ?>">
-		<meta name="og:title" content="<?php echo $title; ?>">
-		<meta name="og:url" content="<?php echo $url; ?>">
-		<meta name="og:site_name" content="TitikKoma">
+		<meta property="og:description" content="<?php echo $description; ?>">
+		<meta property="og:title" content="<?php echo $title; ?>">
+		<meta property="og:url" content="<?php echo $url; ?>">
+		<meta property="og:site_name" content="TitikKoma">
 
-		<meta name="twitter:card" content="summary">
-    	<meta name="twitter:url" content="<?php echo $url; ?>">
-    	<meta name="twitter:title" content="<?php echo $title; ?>">
-    	<meta name="twitter:description" content="<?php echo $description; ?>">
+		<meta property="twitter:card" content="summary">
+    	<meta property="twitter:url" content="<?php echo $url; ?>">
+    	<meta property="twitter:title" content="<?php echo $title; ?>">
+    	<meta property="twitter:description" content="<?php echo $description; ?>">
 
