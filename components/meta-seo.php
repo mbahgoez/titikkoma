@@ -59,6 +59,7 @@
 	
 		<meta property="fb:app_id" content="1129385450445313" />
 
+
 		<meta name="description" content="<?php echo $description; ?>" />
 		<meta name="keywords" content="<?php echo $keywords; ?>" />
 
