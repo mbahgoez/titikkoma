@@ -66,6 +66,8 @@
 		<meta property="og:title" content="<?php echo $title; ?>">
 		<meta property="og:url" content="<?php echo $url; ?>">
 		<meta property="og:site_name" content="TitikKoma">
+		<meta property="og:image" content="https://uploads.branded.me/0cXTdtMZsiTXa2UmzMyy_blob">
+
 
 		<meta property="twitter:card" content="summary">
     	<meta property="twitter:url" content="<?php echo $url; ?>">
