@@ -57,20 +57,20 @@
 	}
 ?>
 	
-		<meta property="fb:app_id" content="1129385450445313">
+		<meta property="fb:app_id" content="1129385450445313" />
 
-		<meta name="description" content="<?php echo $description; ?>">
-		<meta name="keywords" content="<?php echo $keywords; ?>">
+		<meta name="description" content="<?php echo $description; ?>" />
+		<meta name="keywords" content="<?php echo $keywords; ?>" />
 
-		<meta property="og:description" content="<?php echo $description; ?>">
-		<meta property="og:title" content="<?php echo $title; ?>">
-		<meta property="og:url" content="<?php echo $url; ?>">
-		<meta property="og:site_name" content="TitikKoma">
-		<meta property="og:image" content="http://titikkoma.xyz/image/ogimage.jpg">
+		<meta property="og:description" content="<?php echo $description; ?>" />
+		<meta property="og:title" content="<?php echo $title; ?>" />
+		<meta property="og:url" content="<?php echo $url; ?>" />
+		<meta property="og:site_name" content="TitikKoma" />
+		<meta property="og:image" content="http://titikkoma.xyz/image/ogimage.jpg" />
 
 
-		<meta property="twitter:card" content="summary">
-    	<meta property="twitter:url" content="<?php echo $url; ?>">
-    	<meta property="twitter:title" content="<?php echo $title; ?>">
-    	<meta property="twitter:description" content="<?php echo $description; ?>">
+		<meta property="twitter:card" content="summary" />
+    	<meta property="twitter:url" content="<?php echo $url; ?>" />
+    	<meta property="twitter:title" content="<?php echo $title; ?>" />
+    	<meta property="twitter:description" content="<?php echo $description; ?>" />
 
