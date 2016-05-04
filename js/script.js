@@ -168,21 +168,43 @@ if(textarea !== null){
 
 
 
+function getWidth(){
+	return window.innerWidth;
+}
+getWidth();
+
+window.addEventListener('resize', function(){
+	var widthDevice = getWidth();
+
+
 var catElem = document.getElementById("category");
-	catElem.style.top = "210px";
-	catElem.style.position = "fixed";
-	catElem.style.width = "21%"
 
-	window.addEventListener('scroll', function(){
-		var ypos = window.pageYOffset;
+	if(widthDevie >= 768){
 
-		// console.log(ypos);
-		if(ypos > 211){
-			catElem.style.transition = "all .3s ease";
-			catElem.style.top = "50px";
-		}
-		else {
-			catElem.style.top = "210px";
-		}
 		
-	});
+		catElem.style.top = "210px";
+		catElem.style.position = "fixed";
+		catElem.style.width = "21%"
+
+		window.addEventListener('scroll', function(){
+			var ypos = window.pageYOffset;
+			var width = window.inner
+
+			// console.log(ypos);
+				if(ypos > 211){
+					catElem.style.transition = "all .3s ease";
+					catElem.style.top = "50px";
+				}
+				else {
+					catElem.style.top = "210px";
+				}
+
+
+		});
+	}
+	else {
+		catElem.style.top = "210px";
+		catElem.style.position = "relative";
+	}
+		
+});
