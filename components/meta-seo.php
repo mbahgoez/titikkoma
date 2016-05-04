@@ -65,7 +65,7 @@
 
 		<meta property="og:description" content="<?php echo $description; ?>" />
 		<meta property="og:title" content="<?php echo $title; ?>" />
-		<meta property="og:url" content="<?php echo $url; ?>" />
+		<meta property="og:url" content="<?php echo 'http://titikkoma.xyz' ?>" />
 		<meta property="og:site_name" content="TitikKoma" />
 		<meta property="og:image" content="http://titikkoma.xyz/image/ogimage.jpg" />
 
