@@ -46,6 +46,9 @@
 			$title 		 = "TitikKoma: Utillity";
 			$keywords 	 = "titikkoma, ppa, install, terminal, aplikasi, ubuntu, apt-get, arch, repository";
 		}
+		else {
+			$title = "Uncategorized";
+		}
 	}
 
 
@@ -62,10 +65,11 @@
 
 		<meta name="description" content="<?php echo $description; ?>" />
 		<meta name="keywords" content="<?php echo $keywords; ?>" />
-
+		
+		
 		<meta property="og:description" content="<?php echo $description; ?>" />
 		<meta property="og:title" content="<?php echo $title; ?>" />
-		<meta property="og:url" content="<?php echo 'http://titikkoma.xyz' ?>" />
+		<meta property="og:url" content="<?php echo "http://".$url; ?>" />
 		<meta property="og:site_name" content="TitikKoma" />
 		<meta property="og:image" content="http://titikkoma.xyz/image/ogimage.jpg" />
 

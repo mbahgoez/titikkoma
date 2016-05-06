@@ -175,7 +175,8 @@ hr {
       position: relative;
       float: left;
       padding: 0px;
-      display: block; }
+      display: block;
+      min-height: 1px; }
       .container .row .col.lg-1 {
         width: 8.33333%; }
         @media (max-width: 768px) {
@@ -541,9 +542,7 @@ section {
     margin: 5px 0;
     background: #2E85F4;
     border: none;
-    padding: 15px;
-    border-radius: 3px;
-    box-shadow: 0 1px 5px 0 #ccc;
+    padding: 10px;
     color: #fff;
     font-family: 'raleway', 'helvetica', sans-serif; }
 

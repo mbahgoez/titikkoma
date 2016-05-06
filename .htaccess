@@ -1,15 +1,16 @@
 RewriteEngine On
-ErrorDocument 404 /404.php
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php
-RewriteRule ^category/([0-9a-zA-Z]+) category.php?category=$1 [NC,L]
-RewriteRule ^application/([0-9a-zA-Z]+) application.php?id=$1 [NC,L]
-REwriteRule ^application/ index.php [L]
 
+ErrorDocument 404 /404.php
 
 RewriteCond %{HTTP_HOST} ^31\.220\.16\.31
 RewriteRule (.*) http://www.titikkoma.xyz/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^www\.titikkoma\.xyz$
 RewriteRule ^/?$ "http\:\/\/titikkoma\.xyz\/" [R=301,L]
+
+RewriteRule ^category/([0-9a-zA-Z]+) category.php?category=$1 [NC,L]
+
+
+RewriteRule ^application/([0-9a-zA-Z\-]+)$ application.php?distro=$1 [NC,L]
+RewriteRule ^application/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)$ application.php?distro=$1&category=$2 [NC,L]
+RewriteRule ^application/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)$ application.php?distro=$1&category=$2&slug=$3&id=$4 [NC,L]

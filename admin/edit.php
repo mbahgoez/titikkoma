@@ -36,18 +36,45 @@ $categories = $data['category'];
 	 ?>
 	<section class="container" id="content">
 		<div class="row">
-			<div class="col lg-4">
+			<div class="col lg-3">
 				<?php include "../components/menu.php" ?>
 			</div>
-			<div class="col lg-6">
+			<div class="col lg-7">
 				
 
 				<div class="make-post">
 					<div class="card">
 						<h6>Edit Post</h6>
 						<form autocomplete="off" method="POST" action="../admin/process/update.php?update=<?php echo $id; ?>">
-							<input type="text" placeholder="Name" name="title" value="<?php echo $data['title_app']; ?>" required>
+							<input 
+								type="text" 
+								placeholder="Name" 
+								name="title" 
+								value="<?php echo $data['title_app']; ?>" required>
 							
+							<input 
+								type="text" 
+								placeholder="Slug" 
+								name="slug"
+								value="<?php echo $data['slug_app']; ?>" 
+								required>
+
+							<!-- <label for="">Untuk membuat keywords, buatlah masing-masing kata yang di pisah menggunakan tanda ','</label> -->
+
+							<input 
+								type="text" 
+								placeholder="Keywords" 
+								name="keywords"
+								value="<?php echo $data['keywords']; ?>"
+								>
+
+							<input 
+								type="text" 
+								placeholder="Description for SEO" 
+								name="metadesc"
+								value="<?php echo $data['metadesc']; ?>"
+								>
+
 							<select name="distro" id="distro">
 								<option <?php 
 								echo setSelected($distro, '');
@@ -57,28 +84,28 @@ $categories = $data['category'];
 								 ?> value="All">All Linux</option>
 								<option <?php 
 								echo setSelected($distro, 'apt-get');
-								 ?> value="apt-get">Ubuntu, Debian, Elementary, Xubuntu, Mint</option>
+								 ?> value="apt-get">apt-get</option>
 								<option <?php 
 								echo setSelected($distro, 'pacman');
-								 ?> value="pacman">Arch, Manjaro</option>
+								 ?> value="pacman">pacman</option>
 								<option <?php 
 								echo setSelected($distro, 'rpm');
-								 ?> value="rpm">Red Hat, CentOS</option>
+								 ?> value="rpm">rpm</option>
 								<option <?php 
 								echo setSelected($distro, 'yum');
-								 ?> value="yum">Fedora</option>
+								 ?> value="yum">yum</option>
 								<option <?php 
-								echo setSelected($distro, 'Ubuntu 14.04');
-								 ?> value="Ubuntu 14.04">Ubuntu 14.04</option>
+								echo setSelected($distro, 'ubuntu');
+								 ?> value="ubuntu">Ubuntu</option>
 								<option <?php 
-								echo setSelected($distro, 'Linux Mint 17.03');
-								 ?> value="Linux Mint 17.03">Linux Mint 17.03</option>
+								echo setSelected($distro, 'mint');
+								 ?> value="mint">Linux Mint</option>
 								<option <?php 
-								echo setSelected($distro, 'Arch Linux');
-								 ?> value="Arch Linux">Arch Linux</option>
+								echo setSelected($distro, 'arch');
+								 ?> value="arch">Arch Linux</option>
 								<option <?php 
-								echo setSelected($distro, 'Debian');
-								 ?> value="Debian">Debian</option>
+								echo setSelected($distro, 'debian');
+								 ?> value="debian">Debian</option>
 
 							</select>
 

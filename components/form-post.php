@@ -5,18 +5,29 @@
 		<h6>Create Post</h6>
 		<form autocomplete="off" method="POST" action="../components/insert.php">
 			<input type="text" placeholder="Name" name="title">
-			
+			<input type="text" placeholder="Slug" name="slug">
+			<input type="text" placeholder="Keywords" name="keywords">
+			<input type="text" placeholder="Description for SEO" name="metadesc">
 			<select name="distro" id="distro">
-				<option value="">Select Distro supported</option>
-				<option value="All">All Linux</option>
-				<option value="apt-get">Ubuntu, Debian, Elementary, Xubuntu, Mint</option>
-				<option value="pacman">Arch, Manjaro</option>
-				<option value="rpm">Red Hat, CentOS</option>
-				<option value="yum">Fedora</option>
-				<option value="Ubuntu 14.04">Ubuntu 14.04</option>
-				<option value="Linux Mint 17.03">Linux Mint 17.03</option>
-				<option value="Arch Linux">Arch Linux</option>
-				<option value="Debian">Debian</option>
+				
+				<option value="">Select Distro or Package Manager</option>
+	
+				<optgroup label="-------------------------------------">
+					<option value="All">All Linux</option>
+				</optgroup>
+	
+				<optgroup label="Package Manager">
+					<option value="apt-get">apt-get</option>
+					<option value="pacman">pacman</option>
+					<option value="rpm">rpm</option>
+					<option value="yum">yum</option>
+				</optgroup>
+				<optgroup label="Distro">
+					<option value="ubuntu">Ubuntu</option>
+					<option value="mint">Linux Mint</option>
+					<option value="arch">Arch Linux</option>
+					<option value="debian">Debian</option>
+				</optgroup>
 			</select>
 
 			<select name="category" id="categories">
@@ -58,7 +69,7 @@
 			</div>
 			
 			<button type="submit" name="tambah" value="submit" id="tambah">PUBLISH</button>
-			<button type="reset" name="reset" value="reset">RESET</button>
+			<button type="reset" name="reset" value="reset" id="reset">RESET</button>
 		</form>
 	</div>
 </div>

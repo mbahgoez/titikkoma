@@ -34,7 +34,7 @@ function getUrlHost($link){
 
 		<ul class="admin">
 			<li><a href="/admin">You Logged as <?php echo $_SESSION['user']; ?></a></li>
-			<li><a class="keluar" href="/admin/keluar">Keluar</a></li>
+			<li><a class="keluar" href="/admin/keluar.php">Keluar</a></li>
 		</ul>
 	
 		<?php

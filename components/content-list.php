@@ -54,8 +54,8 @@ while($app = mysqli_fetch_array($query)){ ?>
 		
 		<?php if(isset($_SESSION['id']) && isset($_SESSION['id'])){ ?>
 		<div class="action">
-			<a href="/admin/edit?<?php echo 'edit='.$app['id_app']; ?>" class="edit">Edit</a>
-			<a href="/admin/delete?<?php echo 'delete='.$app['id_app']; ?>" class="delete">Delete</a>
+			<a href="/admin/edit.php?<?php echo 'edit='.$app['id_app']; ?>" class="edit">Edit</a>
+			<a href="/admin/delete.php?<?php echo 'delete='.$app['id_app']; ?>" class="delete">Delete</a>
 		</div>
 		<?php } ?>
 

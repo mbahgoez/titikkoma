@@ -1,4 +1,6 @@
 <?php 
+session_start();
+
 include "components/connection.php";
 
 function getHost($link){
