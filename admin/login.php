@@ -31,7 +31,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['user'])){
 					<input type="password" name="password" placeholder="Password">
 				</div>
 				<div class="button">
-					<button name="login" value="true">CREATE YOUR ACCOUNT <i class="icon ion-chevron-right"></i></button>
+					<button name="login" value="true">LOGIN <i class="icon ion-chevron-right"></i></button>
 				</div>
 			</div>
 		</div>
