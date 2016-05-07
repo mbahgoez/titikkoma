@@ -342,7 +342,8 @@ form#search-form {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border: 1px solid #eee;
-    background: #fafafa; }
+    background: #fafafa;
+    color: #444; }
     form#search-form input:focus {
       outline: none;
       background: #fff; }
@@ -379,12 +380,16 @@ section {
         color: #fff; }
       section .content:nth-of-type(odd) .desc-app.bg-color p {
         color: #fff; }
+      section .content:nth-of-type(odd) .desc-app.bg-color a.go-to-post {
+        color: #fff; }
     section .content:nth-of-type(even) .desc-app.bg-color {
       background: #88DA2B;
       color: #fff; }
       section .content:nth-of-type(even) .desc-app.bg-color h2 {
         color: #fff; }
       section .content:nth-of-type(even) .desc-app.bg-color p {
+        color: #fff; }
+      section .content:nth-of-type(even) .desc-app.bg-color a.go-to-post {
         color: #fff; }
     section .content:hover:before {
       opacity: 1; }
@@ -442,9 +447,23 @@ section {
   background: #fefefe;
   padding: 30px;
   padding-bottom: 10px;
-  transition: all .3s ease; }
+  transition: all .3s ease;
+  position: relative; }
   .desc-app:hover {
     box-shadow: 0 2px 15px 0 #ccc; }
+  .desc-app .go-to-post {
+    position: absolute;
+    top: 44px;
+    right: 40px;
+    display: block;
+    border: 2px solid;
+    border-radius: 100%;
+    padding: 15px 25px;
+    font-size: 30px;
+    color: #333; }
+    @media (max-width: 768px) {
+      .desc-app .go-to-post {
+        display: none; } }
 
 .install {
   display: none;
@@ -483,7 +502,7 @@ section {
       padding: 10px;
       width: 100%;
       border-radius: 4px;
-      color: #999;
+      color: #555;
       font-weight: 700; }
       .make-post .card input[type="text"]:focus, .make-post .card textarea:focus {
         outline: none; }

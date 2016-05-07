@@ -152,9 +152,9 @@ $gutter: 20px;
 			@include tablet {
 					width:100%;
 					@include tablet {
-					width:100%;
-				}
-				}
+						width:100%;
+					}
+			}
 			&.lg-8 {
 				@include col(8);
 				@include tablet {
@@ -259,6 +259,14 @@ $gutter: 20px;
 					left:0;
 				}
 			}
+
+
+
+			
 		}
+
+
+
+
 	}
 }

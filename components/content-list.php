@@ -13,6 +13,7 @@ while($app = mysqli_fetch_array($query)){ ?>
 	<div class="desc-app">
 
 		<h2><?php echo $app['title_app']; ?></h2>
+
 		<p>Supported <b><?php echo $app['distro_app']; ?></b> 
 		
 		<?php 
@@ -34,6 +35,12 @@ while($app = mysqli_fetch_array($query)){ ?>
 
 		 ?>
 		 </p>
+
+		 <a href="<?php
+		 echo "http://".$_SERVER['SERVER_NAME']."/application/".$app['distro_app']."/".$app['slug_app']."/".$app['id_app']; 
+		  ?>" class="go-to-post">
+		 	<i class="icon ion-chevron-right"></i>
+		 </a>
 
 	</div>
 	

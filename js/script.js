@@ -142,21 +142,6 @@ if(textarea !== null){
 
 
 
-	// $("#search").on('keyup', function(){
-	// 	var find = $("#search").val();
-
-	// 	// $.get('../components/search-results.php', {
-	// 	// 	"find":find
-	// 	// }).done(function(data){
-	// 	// 	$("#listview").html(data);
-	// 	// });
-
-	// 	$.ajax({
-
-	// 	})
-	// });
-
-
 	$("input[name='tambah']").on('click', function(){
 
 	});
@@ -166,71 +151,15 @@ if(textarea !== null){
 });
 
 
-function menuElem(widthDevice){
-	var catElem = document.getElementById("category");
 
-	if(widthDevice >= 768){
-
-		
-		catElem.style.top = "210px";
-		catElem.style.position = "fixed";
-		catElem.style.width = "21%"
-
-		window.addEventListener('scroll', function(){
-			var ypos = window.pageYOffset;
-			var width = window.inner;
-
-			// console.log(ypos);
-				if(ypos > 211){
-					catElem.style.transition = "all .3s ease";
-					catElem.style.top = "20px";
-				}
-				else {
-					catElem.style.top = "210px";
-				}
-		});
-
-	}
-	else {
-		catElem.style.top = "0px";
-		catElem.style.position = "relative";
-		catElem.style.width = "100%";
-
-		window.addEventListener('scroll', function(){
-			var ypos = window.pageYOffset;
-			var width = window.inner;
-
-			// console.log(ypos);
-				if(ypos > 211){
-					catElem.style.transition = "all .3s ease";
-					catElem.style.top = "20px";
-				}
-				else {
-					catElem.style.top = "20px";
-				}
-		});
-
-	}
-}
-
-
-
-var catElem = document.getElementById("category");
-
-catElem.style.position = "relative";
-catElem.style.top = "0px";
-catElem.style.width = "100%";
 
 
 function getWidth(){
 	return window.innerWidth;
 }
 
-menuElem(getWidth());
+console.log(getWidth());
 
 window.addEventListener('resize', function(){
-	var widthDevice = getWidth();
-
-	menuElem(widthDevice);
-		
+	console.log(getWidth());
 });

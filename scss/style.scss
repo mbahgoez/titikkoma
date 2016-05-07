@@ -66,6 +66,7 @@ form#search-form {
 		border-bottom-left-radius:5px;
 		border:1px solid #eee;
 		background:#fafafa;
+		color:#444;
 
 		&:focus {
 			outline:none;
@@ -120,6 +121,9 @@ section {
 				p {
 					color:#fff;
 				}
+				a.go-to-post {
+					color:#fff;
+				}
 			}
 		}
 		&:nth-of-type(even){
@@ -130,6 +134,9 @@ section {
 					color:#fff;
 				}
 				p {
+					color:#fff;
+				}
+				a.go-to-post {
 					color:#fff;
 				}
 			}
@@ -222,9 +229,26 @@ section {
 	padding:30px;
 	padding-bottom:10px;
 	transition:all .3s ease;
+	position:relative;
 	&:hover {
 		// background: #eee;
 		box-shadow:0 2px 15px 0 #ccc;
+	}
+
+
+	.go-to-post {
+		position: absolute;
+	    top: 44px;
+	    right: 40px;
+	    display: block;
+	    border: 2px solid;
+	    border-radius: 100%;
+	    padding: 15px 25px;
+	    font-size: 30px;
+	    color: #333;
+	    @include tablet {
+	    	display: none;
+	    }
 	}
 }
 // desc app
@@ -276,7 +300,7 @@ section {
 			padding:10px;
 			width:100%;
 			border-radius: 4px;
-			color:#999;
+			color:#555;
 			font-weight: 700;
 
 			&:focus {
@@ -411,7 +435,6 @@ blockquote {
 	}
 } 
 // blockquote
-
 
 
 

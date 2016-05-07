@@ -24,13 +24,6 @@ function getHost($link){
 	<?php include "components/analytics.php"; ?>
 	<link rel="canonical" href="http://titikkoma.xyz/" itemprop="url">
 
-	<style>
-	div.category {
-		position:fixed; 
-		width:20%; 
-		top:205px;
-	}
-	</style>
 </head>
 <body>
 	

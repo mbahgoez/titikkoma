@@ -74,7 +74,7 @@
 		<meta property="og:image" content="http://titikkoma.xyz/image/ogimage.jpg" />
 
 
-		<meta property="twitter:card" content="summary" />
+		<meta name="twitter:card" content="summary" />
     	<meta property="twitter:url" content="<?php echo $url; ?>" />
     	<meta property="twitter:title" content="<?php echo $title; ?>" />
     	<meta property="twitter:description" content="<?php echo $description; ?>" />
