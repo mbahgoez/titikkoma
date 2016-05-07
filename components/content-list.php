@@ -37,7 +37,7 @@ while($app = mysqli_fetch_array($query)){ ?>
 		 </p>
 
 		 <a href="<?php
-		 echo "http://".$_SERVER['SERVER_NAME']."/application/".$app['distro_app']."/".$app['slug_app']."/".$app['id_app']; 
+		 echo "http://".$_SERVER['SERVER_NAME']."/application/".$app['distro_app']."/".$app['category']."/".$app['slug_app']."/".$app['id_app']; 
 		  ?>" class="go-to-post">
 		 	<i class="icon ion-chevron-right"></i>
 		 </a>
